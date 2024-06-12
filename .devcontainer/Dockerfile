@@ -28,6 +28,7 @@ RUN git config --system codespaces-theme.hide-status 1
 RUN wget https://packages.wpilib.workers.dev/installer/v2024.3.2/Linux/WPILib_Linux-2024.3.2.tar.gz
 RUN tar -xzvf WPILib_Linux-2024.3.2.tar.gz
 RUN cd WPILib_Linux-2024.3.2
+RUN sudo apt update && sudo apt install openjdk-17-jdk && sudo apt-get install fuse
 
 
 USER node
